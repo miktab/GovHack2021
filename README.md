@@ -43,6 +43,9 @@ Randomised Response and Secure Multiparty Computation both have their place in t
 
 Secure Multiparty computation doesn't add noise but Randomises response does not require long computations.
 
+This project seeks to be an accessible educational resource so people can learn, understand
+and verify the methodologies described. Only that way can people understand, rather than be expected to trust, in the privacy 
+they are guaranteed with these methods.
 
 ## Bibiliography
 https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GBW88/GBW88.pdf
