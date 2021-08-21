@@ -1,0 +1,63 @@
+---
+title: "Perfectly-Secure Multiparty Surveying"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Goal
+
+A demonstration of how groups of people can be surveyed in a provably trustless and anonymous manner without added uncertainty.
+
+### Polynomials
+
+Polynomials are functions of the form:
+$$f(x) = ax^2 +bx+c$$
+There are 3 properties of polynomials that we care about:
+
+1. Polynomials of degree T can be uniquely identified by T+1 unique points on the function through the use of Lagrange Polynomial interpolation.
+2. The set of polynomials of degree T is closed under addition.
+
+Together they let us use BGW Protocol for Perfectly-Secure Multiparty Surveying.
+ 
+## What is the BWG Protocol?
+
+The idea comes from a 1988 paper, in which the authors (Ben-Or. M , Goldwasser. S, Wigderson. A) proposed a way to sum the the numbers of N participants without any member divulging their own number. 
+
+
+
+```{r polynomials, echo=FALSE}
+shinyAppDir(
+  "polynomials",
+  options = list(
+    width = "100%", height = 1200
+  )
+)
+```
+
+## Drawbacks
+What we have demonstrated is a simplified version of what is introduced by BWD 1988. It illustrates the key principles of the BWG protocol and suffices for application among honest and non malicious parties.
+
+However, if the group is contaminated we suffer 2 main problems:
+
+1. Easy to sabotage. 
+2. Misreporting
+
+
+The protocol introduced in the paper extends on this to have amazing properties in:
+
+1. Private Channels.
+2. Semi honest Parties.
+3. Malicious Parties.
+
+
+## Bibliography
+
+https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GBW88/GBW88.pdf
+https://eprint.iacr.org/2011/136.pdf
+https://rpubs.com/aaronsc32/lagrangian-polynomial-interpolation-r
+
+

@@ -1,0 +1,10 @@
+> rsconnect::setAccountInfo(name='tomson', token='12CAADC39F947414E8A953AE988FCE07', secret='phcU1GJyHWj+BfnvOZumLejBnt51svgsawF2gtip')
+> library(rsconnect)
+> rsconnect::deployApp('path/to/your/app')
+Error in rsconnect::deployApp("path/to/your/app") : 
+  path/to/your/app does not exist
+> 
+> getwd()
+[1] "/home/user"
+> library(rsconnect)
+> rsconnect::deployApp('/home/user/WebstormProjects/GovHack/R_files/demo.Rmd')

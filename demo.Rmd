@@ -1,0 +1,74 @@
+---
+title: "Provably Anonymous Covid Survey"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Goal
+
+A demonstration of how anyone can be surveyed in a provably trustless and anonymous manner through adding noise to the response by using Randomised Responses.
+
+## An Embarrassing Question
+
+Suppose I asked you, a very sensitive question.
+
+Randomised Response Surveys are conducted in the following manner:
+
+1. An embarrassing question is posed to the participant.
+2. Participants flip a coin before they answer. 
+3. We instruct them to answer truthfully, if it comes up heads and YES if it comes up tails.
+
+Only the participant knows if their YES is a result of a tails coin toss or their truthful answer. 
+
+In the aggregate, we expect to see more than 50% of "yes" responses. If done as a census, we can get very good estimates of the true proportion of "yes" respondents.
+
+## What are Randomised Responses?
+
+The idea comes from a 1965 paper, in which author Stanley L Warner proposed a way to obfuscate responses of a survey by letting users
+
+
+```{r coinflip, echo=FALSE}
+shinyAppDir(
+  "coinflip",
+  options = list(
+    width = "100%", height = 700
+  )
+)
+```
+
+## Drawbacks
+
+This methodology increases the uncertainty of the answers, and is only useful when the sample size is large. 
+
+However, when the behvaiour we're investigating is rare and the population is small, signal becomes impossible to detect from the noise. 
+
+To visualise this phenomenon we employ an illustration using the VIC dataset on young drug users in schools.
+
+https://discover.data.vic.gov.au/dataset/vcams-proportion-of-young-people-who-have-ever-used-marijuana-or-other-illegal-drugs
+
+
+The Victorian Student Health and Wellbeing Survey (VSHAWS) also known as ‘About You’ conducted a survey of approximately 6,000 students 
+from 264 Victorian schools, in Years 5, 8 and 11. Participants were given a non disclosure promise but what if they had underwent the randomized response
+survey instead?
+
+Below are simulations of what the outcomes would be if students had participated in randomized response surveys instead.
+
+```{r drugs, echo=FALSE}
+shinyAppDir(
+  "drugs",
+  options = list(
+    width = "100%", height = 550
+  )
+)
+```
+
+
+## Bibliography:
+https://www.jstor.org/stable/2283137
+https://imai.fas.harvard.edu/research/files/randresp.pdf
+
+
