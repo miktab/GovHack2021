@@ -1,8 +1,8 @@
 # To trust or not to trust?
 
-When asked about a sensitive issue, and told "This is an anonymous survey."
+When asked about a sensitive issue, and told "This is an anonymous survey."...
 
-as carefree as bender?
+Are you as carefree as bender?
 ![bender](www/bender.jpg "Title")
 
 Or as suspicious as Fry?
@@ -22,7 +22,7 @@ So this weekend I explored 2 methods for the anonymous submission of survey resp
 
 ## Method I: Randomised Response
 
-Randomised response is an easy to understand procedure, used in structured survey interview, to protect the participants responses. 
+Randomised response is an easy to understand procedure, used in structured survey interviews, to protect the participants responses. 
 The methodology comes from the 1965 paper by Warner and is regularly used in surveys about
 doping in sports.
 
@@ -31,8 +31,8 @@ doping in sports.
 
 
 ## Method II: Secure Multiparty Computation
-Secure Multiparty Computation is a subfield of cryptography which aims to compute functions where
-the inputs are not directly known. The methodology comes from the 1989 paper by Ben-Or. M , Goldwasser. S, Wigderson. A
+Secure Multiparty Computation is a subfield of cryptography which aims to compute functions while keeping inputs private.
+The methodology comes from the 1989 paper by Ben-Or. M , Goldwasser. S, Wigderson. A
 and is one of the most fundamental results of secure computation.
 
 [Secure Multiparty Computation](https://tomson.shinyapps.io/secure-multiparty-computation/)
