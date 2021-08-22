@@ -4,7 +4,7 @@ elicit truthful responses from participants about sensitive issues?
 
 In this project, we implement protocols to give participants a provably anonymous way to respond
 truthfully to such questions without relying on a mere promise of anonymity. 
-[![video](www/thumbnail.jpg)](https://www.youtube.com/watch?v=681m-uxrN0w)
+[![video](www/thumbnail.jpg)](https://www.youtube.com/watch?v=2jv3TVsvvJs)
 
 ## Intro
 When asked about a sensitive issue, and told "This is an anonymous survey."...
@@ -43,9 +43,9 @@ and is one of the most fundamental results of secure computation.
 
 
 ## Conclusion:
-Randomised Response and Secure Multiparty Computation both have their place in the area of surveys.
+Randomised Response and Secure Multiparty Computation both have their place in the field of anonymous surveys.
 
-Secure Multiparty computation doesn't add noise but Randomises response does not require long computations.
+Secure Multiparty computation doesn't add noise but Randomised response surveys do not require long computations.
 
 This project seeks to be an accessible educational resource so people can learn, understand
 and verify the methodologies described. Only that way can people understand, rather than be expected to trust, in the privacy 
