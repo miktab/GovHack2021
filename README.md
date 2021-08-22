@@ -27,7 +27,7 @@ Randomised response is an easy to understand procedure, used in structured surve
 The methodology comes from the 1965 paper by Warner and is regularly used in surveys about
 doping in sports.
 
-[Randomised Response](https://tomson.shinyapps.io/demo_poly/)
+[CLICK HERE TO VIEW (Randomised Response)](https://tomson.shinyapps.io/demo_poly/)
 
 
 
@@ -36,7 +36,7 @@ Secure Multiparty Computation is a subfield of cryptography which aims to comput
 The methodology comes from the 1989 paper by Ben-Or. M , Goldwasser. S, Wigderson. A
 and is one of the most fundamental results of secure computation.
 
-[Secure Multiparty Computation](https://tomson.shinyapps.io/secure-multiparty-computation/)
+[CLICK HERE TO VIEW (Secure Multiparty Computation)](https://tomson.shinyapps.io/secure-multiparty-computation/)
 
 
 ## Conclusion:
@@ -47,6 +47,11 @@ Secure Multiparty computation doesn't add noise but Randomises response does not
 This project seeks to be an accessible educational resource so people can learn, understand
 and verify the methodologies described. Only that way can people understand, rather than be expected to trust, in the privacy 
 they are guaranteed with these methods.
+
+## About me:
+![bender](www/tom.jpeg "Title")
+Hi and Welcome! My name's Tom and I'm a recent graduate living in the Melbourne Lockdown. If you would like to contact or collaborate with me, reach out to me on [Linkedin](https://www.linkedin.com/in/tomson-qin-43bb44190/).
+
 
 ## Bibiliography
 https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GBW88/GBW88.pdf
