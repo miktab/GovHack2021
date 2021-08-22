@@ -1,12 +1,32 @@
 # To trust or not to trust?
+Is telling survey participants that their answers will remain anonymous really enough to 
+elicit truthful responses from participants about sensitive issues?
+
+In this project, we implement protocols to give participants a provably anonymous way to respond
+truthfully to such questions without relying on a mere promise of anonymity. 
 [![video](www/thumbnail.jpg)](https://www.youtube.com/watch?v=681m-uxrN0w)
 
+## Challenges
+### [ Safeguarding citizens privacy and ownership of their personal data ](https://hackerspace.govhack.org/challenges/safeguarding_citizens_privacy_and_ownership_of_their_personal_data)
+
+The pandemic has seen a massive shift to government digital services. Increasing amounts of personal data are required from citizens to support the pandemic response like QR code contact tracing apps, post vaccine surveys and business support grants.
+
+### [Reimagining Digital Government Services](https://hackerspace.govhack.org/challenges/reimagining_digital_government_services)
+
+While working on this challenge, participants are expected to reimagine digital government services and how these could be better made available to citizens by seamlessly integrating services that support people’s needs across life events. Participants will need to think of ideas to deliver digital government services that are simple and personalised across multiple agencies.
+
+### [ Building Citizen’s Trust in this Digital World ](https://hackerspace.govhack.org/challenges/building_citizen_s_trust_in_this_digital_world)
+There has always been concerns around data governance and citizens having no visibility of what data is being collected from them, in which way and how it is being used. The terms and conditions might list these details, but it is not always the case that the citizens read (due to the length of it) or understand (due to the way it is written) it. This ties back to the trust that citizens have that the data is being used for bettering the systems and products.
+
+## Intro
 When asked about a sensitive issue, and told "This is an anonymous survey."...
 
 Are you as carefree as bender?
+
 ![bender](www/bender.jpg "Title")
 
 Or as suspicious as Fry?
+
 ![fry](www/fry.jpeg "Title")
 
 The issue this Project aims to solve pertains to surveys of sensitive issues on groups of people. Questions like
@@ -21,22 +41,17 @@ To "trust, but verify" comes from the rhyming Russian Proverb and is in my opini
 
 So this weekend I explored 2 methods for the anonymous submission of survey responses that aims to protect the privacy or all participants.
 
-## Method I: Randomised Response
+## [Method I: Randomised Response (Click here)](https://tomson.shinyapps.io/demo_poly/)
 
 Randomised response is an easy to understand procedure, used in structured survey interviews, to protect the participants responses. 
 The methodology comes from the 1965 paper by Warner and is regularly used in surveys about
 doping in sports.
 
-[CLICK HERE TO VIEW (Randomised Response)](https://tomson.shinyapps.io/demo_poly/)
 
-
-
-## Method II: Secure Multiparty Computation
+## [Method II: Secure Multiparty Computation (Click here)](https://tomson.shinyapps.io/secure-multiparty-computation/)
 Secure Multiparty Computation is a subfield of cryptography which aims to compute functions while keeping inputs private.
 The methodology comes from the 1989 paper by Ben-Or. M , Goldwasser. S, Wigderson. A
 and is one of the most fundamental results of secure computation.
-
-[CLICK HERE TO VIEW (Secure Multiparty Computation)](https://tomson.shinyapps.io/secure-multiparty-computation/)
 
 
 ## Conclusion:
