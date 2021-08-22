@@ -1,4 +1,5 @@
 # To trust or not to trust?
+[![video](https://img.youtube.com/vi/681m-uxrN0w/0.jpg)](https://www.youtube.com/watch?v=681m-uxrN0w)
 
 When asked about a sensitive issue, and told "This is an anonymous survey."...
 
@@ -16,7 +17,7 @@ Can participants really be expected to trust the word of the surveyer, and answe
 implications of admission can be so deadly?
 
 # Trust, but Verify
-To "trust, buy verify" comes from the rhyming Russian Proverb and is in my opinion a very wise philosophy.
+To "trust, but verify" comes from the rhyming Russian Proverb and is in my opinion a very wise philosophy.
 
 So this weekend I explored 2 methods for the anonymous submission of survey responses that aims to protect the privacy or all participants.
 
