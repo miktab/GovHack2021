@@ -1,5 +1,5 @@
 # To trust or not to trust?
-[![video](https://img.youtube.com/vi/681m-uxrN0w/0.jpg)](https://www.youtube.com/watch?v=681m-uxrN0w)
+[![video](www/thumbnail.jpg)](https://www.youtube.com/watch?v=681m-uxrN0w)
 
 When asked about a sensitive issue, and told "This is an anonymous survey."...
 
