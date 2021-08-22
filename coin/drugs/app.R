@@ -14,7 +14,7 @@ source("simul.R")
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Illustration on Vic Drugs Dataset"),
+    titlePanel("Simulated Randomised Response surveys on Vic Drugs Dataset"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
@@ -47,7 +47,7 @@ server <- function(input, output,session) {
             students <-df[which(df$DHS_AREA ==input$school_selection),"students"]
             yes<-df[which(df$DHS_AREA ==input$school_selection),"yes"]
             simulations<-simulate_N(yes/students,isolate(input$samples))
-            hist(simulations)
+            hist(simulations,ylab = "frequency",xlab = "prediction from survey",main = paste("1000 Simulations of Randomised response surveys in",input$school_selection))
             abline(v=yes/students, col="red")
             abline(v=quantile(simulations,0.025), col="green",lty = 2)
             abline(v=quantile(simulations,0.975), col="green",lty = 2)

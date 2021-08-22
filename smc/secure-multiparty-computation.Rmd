@@ -15,10 +15,11 @@ A demonstration of how groups of people can be surveyed in a provably trustless 
 ### Polynomials
 
 Polynomials are functions of the form:
-$$f(x) = ax^2 +bx+c$$
-There are 3 properties of polynomials that we care about:
 
-1. Polynomials of degree T can be uniquely identified by T+1 unique points on the function through the use of Lagrange Polynomial interpolation.
+$$f(x) = ax^2 +bx+c$$
+There are 2 properties of polynomials that we care about:
+
+1. Polynomials of degree T can be uniquely defined by T+1 unique points on the function through the use of Lagrange Polynomial interpolation.
 2. The set of polynomials of degree T is closed under addition.
 
 Together they let us use BGW Protocol for Perfectly-Secure Multiparty Surveying.
@@ -26,6 +27,25 @@ Together they let us use BGW Protocol for Perfectly-Secure Multiparty Surveying.
 ## What is the BWG Protocol?
 
 The idea comes from a 1988 paper, in which the authors (Ben-Or. M , Goldwasser. S, Wigderson. A) proposed a way to sum the the numbers of N participants without any member divulging their own number. 
+
+Procedure:
+
+1. Let there be 3 participants.
+2. Let each participant generate a random polynomial $r$ that has value $r(0) = 1$ if they want to answer YES and $r(0)=0$ if they want to answer NO.
+3. Instruct the participants to keep their polynomials to themselves. Let's call user_A's polynomial: A, user_B's polynomial B and so forth.
+4. Let user_A give the evaluation of A(2) to user_B and A(3) to user_C.
+5. Let user_B give the evaluation of B(1) to user_B and B(3) to user_C.
+6. Let user_C give the evaluation of C(1) to user_A and C(2) to user_B.
+7. Instruct participants to keep the shared values to themselves.
+8. Now we try to find f(x) = A(x)+B(x)+C(x), another 2nd degree polynomial by the 2nd property of polynomials.
+9. Since user_A has A(1),B(1),C(1), they know f(1) and so broadcasts the value f(1).
+10. Since user_B has A(2),B(2),C(2), they know f(2) and so broadcasts the value f(2).
+11. Since user_C has A(3),B(3),C(3), they know f(3) and so broadcasts the value f(3).
+12. Now that f(1),f(2),f(3) are public knowledge, we can use the 1st property of polynomials to find f.
+13. Evaluate f(0). This is the sum of all the people who answered yes to the survey (A(0)+B(0)+C(0))
+
+
+
 
 
 
@@ -37,6 +57,7 @@ shinyAppDir(
   )
 )
 ```
+
 
 ## Drawbacks
 What we have demonstrated is a simplified version of what is introduced by BWD 1988. It illustrates the key principles of the BWG protocol and suffices for application among honest and non malicious parties.
@@ -53,11 +74,13 @@ The protocol introduced in the paper extends on this to have amazing properties 
 2. Semi honest Parties.
 3. Malicious Parties.
 
+## Speed Complexity.
 
-## Bibliography
+Say we want to do a survey using this method on a million participants. That group can be partitioned to groups of size 10, such that only 10,000,000 messages need to be sent between participants. 
 
-https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GBW88/GBW88.pdf
-https://eprint.iacr.org/2011/136.pdf
-https://rpubs.com/aaronsc32/lagrangian-polynomial-interpolation-r
+Partitioning has the added benefit, for this naive approach, of not allowing contaminated results to leak into other partitions.
 
+## Citations
 
+1. [Completeness Theores for the Non-Cryptographic Fault-Tolerant Distirbuted Computation](https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/GBW88/GBW88.pdf)
+2. [A Full Proof of the BGW Protocol for Perfectly-SecureMultiparty Computation](https://eprint.iacr.org/2011/136.pdf)

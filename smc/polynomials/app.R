@@ -99,6 +99,7 @@ server <- function(input, output) {
             points(1, polynomial(polynomial_B(),1),col = "green",lwd = 4)
             points(1, polynomial(polynomial_C(),1),col = "blue",lwd = 4)
             
+            
         } else if (input$visibility =="What User B sees"){
             ys =cbind(polynomial(polynomial_B(),x))
             matplot(x,ys ,type = 'l',col = c("green"),lwd = 2,ylim = ylim,main = "Participants polynomials",ylab = "y")
@@ -131,10 +132,13 @@ server <- function(input, output) {
             points(3, polynomial(polynomial_A()+polynomial_B()+polynomial_C(),3),col = "orange",lwd = 4)
         } else{
             ys =cbind(polynomial(polynomial_A(),x),polynomial(polynomial_B(),x),polynomial(polynomial_C(),x),polynomial(polynomial_A()+polynomial_B()+polynomial_C(),x))
-            matplot(x,ys ,type = 'l',col = c("red","green","blue","orange"),lwd = c(6,2,2,4))
+            matplot(x,ys ,type = 'l',col = c("red","green","blue","orange"),lwd = c(6,2,2,4),main = "Participants Polynomials",ylab = "y")
             
         }
-        
+        abline(v=0,col = "orange",lty = "dotted")
+        abline(v=1,col = "red",lty = "dotted")
+        abline(v=2,col = "green",lty = "dotted")
+        abline(v=3,col = "blue",lty ="dotted")
     })
     toListen <- reactive({
         list(input$randomise,input$userA_response)
@@ -175,6 +179,7 @@ server <- function(input, output) {
     
     output$userA_polynomial<- renderText({
         c("<b>Your polynomial: </b>",
+          "<br>",
           print_polynomial(polynomial_A()),
           "<br>",
           "<br>",

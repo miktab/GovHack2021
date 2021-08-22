@@ -44,11 +44,11 @@ shinyAppDir(
 
 This methodology increases the uncertainty of the answers, and is only useful when the sample size is large. 
 
-However, when the behvaiour we're investigating is rare and the population is small, signal becomes impossible to detect from the noise. 
+However, when the behavior we're investigating is rare and the population is small, signal becomes impossible to detect from the noise. 
 
-To visualise this phenomenon we employ an illustration using the VIC dataset on young drug users in schools.
+To visualise this phenomenon we employ an illustration using the VIC [dataset](https://discover.data.vic.gov.au/dataset/vcams-proportion-of-young-people-who-have-ever-used-marijuana-or-other-illegal-drugs) on young drug users in schools.
 
-https://discover.data.vic.gov.au/dataset/vcams-proportion-of-young-people-who-have-ever-used-marijuana-or-other-illegal-drugs
+
 
 
 The Victorian Student Health and Wellbeing Survey (VSHAWS) also known as ‘About You’ conducted a survey of approximately 6,000 students 
@@ -67,8 +67,9 @@ shinyAppDir(
 ```
 
 
-## Bibliography:
-https://www.jstor.org/stable/2283137
-https://imai.fas.harvard.edu/research/files/randresp.pdf
+## Papers cited:
+
+1. [Randomised response: a survey technique for eliminating evasive answer bias](https://www.jstor.org/stable/2283137)
+2. [Design and Analysis of the randomised response Technique](https://imai.fas.harvard.edu/research/files/randresp.pdf)
 
 
