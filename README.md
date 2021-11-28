@@ -1,5 +1,5 @@
-# GovHack2021 Runner up 
-![cert](www/certificate.png "Certificate")
+# GovHack 2021 Runner up 
+[![cert](www/certificate.png)](https://www.data.vic.gov.au/govhack-2021-awards-night-victorian-winners-announced)
 
 # To trust or not to trust?
 Is telling survey participants that their answers will remain anonymous really enough to 
