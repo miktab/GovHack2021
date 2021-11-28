@@ -8,6 +8,7 @@ elicit truthful responses from participants about sensitive issues?
 
 In this project, we implement protocols to give participants a provably anonymous way to respond
 truthfully to such questions without relying on a mere promise of anonymity. 
+
 [![video](www/thumbnail.jpg)](https://www.youtube.com/watch?v=2jv3TVsvvJs)
 
 ## Intro
