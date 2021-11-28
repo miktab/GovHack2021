@@ -1,9 +1,6 @@
 # GovHack2021 Runner up 
 ![cert](www/certificate.png "Certificate")
 
-Prize Recipient for runner up in the Victorian Department of Premier and Cabinet’s Challenge:
-“Safeguarding citizens privacy and ownership of their personal data”.
-
 # To trust or not to trust?
 Is telling survey participants that their answers will remain anonymous really enough to 
 elicit truthful responses from participants about sensitive issues?
